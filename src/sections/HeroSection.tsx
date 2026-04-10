@@ -5,6 +5,8 @@ import { ArrowRight, ChevronDown } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
+const BASE_URL = import.meta.env.BASE_URL;
+
 export default function HeroSection() {
   const sectionRef = useRef<HTMLElement>(null);
   const headlineRef = useRef<HTMLDivElement>(null);
@@ -146,7 +148,7 @@ export default function HeroSection() {
       {/* Background Image */}
       <img
         ref={bgRef}
-        src="/hero_highway.jpg"
+        src={`${BASE_URL}hero_highway.jpg`}
         alt="Highway construction at night"
         className="section-background"
       />

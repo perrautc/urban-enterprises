@@ -11,11 +11,13 @@ import ContactSection from './sections/ContactSection';
 
 gsap.registerPlugin(ScrollTrigger);
 
+const BASE_URL = import.meta.env.BASE_URL;
+
 // Service section data
 const serviceSections = [
   {
     id: 'heavy-lifting',
-    image: '/crane_lifting.jpg',
+    image: `${BASE_URL}crane_lifting.jpg`,
     imageAlt: 'Crane lifting steel beams at night',
     microLabel: 'Lifting',
     headlineLine1: 'Heavy',
@@ -28,7 +30,7 @@ const serviceSections = [
   },
   {
     id: 'site-prep',
-    image: '/excavator_night.jpg',
+    image: `${BASE_URL}excavator_night.jpg`,
     imageAlt: 'Excavator working at night',
     headlineLine1: 'Site',
     headlineLine2: 'Prep',
@@ -40,7 +42,7 @@ const serviceSections = [
   },
   {
     id: 'precision',
-    image: '/grader_night.jpg',
+    image: `${BASE_URL}grader_night.jpg`,
     imageAlt: 'Motor grader at night',
     headlineLine1: 'Precision',
     headlineLine2: 'Grading',
@@ -52,7 +54,7 @@ const serviceSections = [
   },
   {
     id: 'supply-chain',
-    image: '/warehouse_night.jpg',
+    image: `${BASE_URL}warehouse_night.jpg`,
     imageAlt: 'Warehouse at night with forklift',
     headlineLine1: 'Supply',
     headlineLine2: 'Chain',
@@ -64,7 +66,7 @@ const serviceSections = [
   },
   {
     id: 'fleet',
-    image: '/bulldozer_fleet.jpg',
+    image: `${BASE_URL}bulldozer_fleet.jpg`,
     imageAlt: 'Bulldozer fleet at night',
     headlineLine1: 'The',
     headlineLine2: 'Fleet',
@@ -76,7 +78,7 @@ const serviceSections = [
   },
   {
     id: 'safety',
-    image: '/equipment_detail.jpg',
+    image: `${BASE_URL}equipment_detail.jpg`,
     imageAlt: 'Heavy equipment detail at night',
     headlineLine1: 'Safety',
     headlineLine2: 'Quality',
